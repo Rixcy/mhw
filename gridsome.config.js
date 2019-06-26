@@ -25,6 +25,14 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Monster',
+        path: 'content/monsters/*.md',
+        route: '/monsters/:slug',
+      }
     }
   ],
 

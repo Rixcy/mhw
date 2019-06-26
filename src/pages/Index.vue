@@ -1,10 +1,9 @@
 <template>
   <Layout :show-logo="false">
-    <!-- Author intro -->
     <Author :show-title="true" />
 
-    <!-- List posts -->
     <div class="posts">
+      <div v-for="thing in $page.monsters.edges" :key="thing.node.id">{{ thing }}</div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
 
@@ -33,6 +32,13 @@
             title
             path
         }
+      }
+    }
+  },
+  monsters: allMonster {
+    edges {
+      node {
+        id
       }
     }
   }
