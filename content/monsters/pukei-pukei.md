@@ -1,5 +1,5 @@
 ---
-name: Pukei-Pukei
+title: Pukei-Pukei
 type: Bird
 resistant_to:
   - Dragon

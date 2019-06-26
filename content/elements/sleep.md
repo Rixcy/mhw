@@ -1,5 +1,5 @@
 ---
-name: Sleep
+title: Sleep
 icon: /images/uploads/sleep-mhw-status-effect.png
 description: >-
   Sleep is a status effect which renders the hunter or monster immobile for

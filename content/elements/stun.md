@@ -1,5 +1,5 @@
 ---
-name: Stun
+title: Stun
 icon: /images/uploads/mhw-stun-status-effect.png
 description: >-
   Stun - Also called K.O. is a [status

@@ -11,34 +11,11 @@
 
 <page-query>
 {
-  posts: allPost {
-    edges {
-      node {
-        id
-        title
-        path
-        tags {
-          id
-          title
-          path
-        }
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        description
-        coverImage (width: 770, height: 380, blur: 10)
-        ...on Post {
-            id
-            title
-            path
-        }
-      }
-    }
-  },
   monsters: allMonster {
     edges {
       node {
         id
-        name
+        title
         location
         type
         description

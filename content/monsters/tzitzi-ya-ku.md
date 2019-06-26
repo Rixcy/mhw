@@ -1,5 +1,5 @@
 ---
-name: Tzitzi-Ya-Ku
+title: Tzitzi-Ya-Ku
 type: Bird
 standard_damage:
   - Blast

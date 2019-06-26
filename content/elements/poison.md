@@ -1,5 +1,5 @@
 ---
-name: Poison
+title: Poison
 icon: /images/uploads/mhw-poison-status-effect.png
 description: |-
   Poison is a status effect which will slowly drain a target's health.

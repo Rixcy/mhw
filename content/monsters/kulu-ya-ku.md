@@ -1,5 +1,5 @@
 ---
-name: Kulu-Ya-Ku
+title: Kulu-Ya-Ku
 location: ''
 type: Bird
 resistantTo: false

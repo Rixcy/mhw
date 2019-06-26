@@ -14,27 +14,26 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "elements"
-    identifier_field: "name"
     label: "Elements"
     label_singular: "Element"
     folder: "content/elements"
     create: true
-    slug: "{{fields.name}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     extension: 'md'
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
+
   - name: "monsters"
-    identifier_field: "name"
     label: "Monsters"
     label_singular: "Monster"
     folder: "content/monsters"
     create: true
-    slug: "{{fields.name}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     extension: 'md'
     fields:
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name", name: "title", widget: "string"}
       - {label: "Cover Image", name: "coverImage", widget: "image", required: false}
       - {label: "Location", name: "location", widget: "string", required: false}
       - label: "Type"

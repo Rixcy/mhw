@@ -1,5 +1,5 @@
 ---
-name: Fire
+title: Fire
 icon: /images/uploads/mhw-fire-damage.png
 description: >-
   Fire Element is usually strong against Ice but weak to Water. Taking fire
