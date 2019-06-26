@@ -3,8 +3,7 @@
     <Author :show-title="true" />
 
     <div class="posts">
-      <div v-for="thing in $page.monsters.edges" :key="thing.node.id">{{ thing }}</div>
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <MonsterCard v-for="edge in $page.monsters.edges" :key="edge.node.id" :monster="edge.node" />
     </div>
 
   </Layout>
@@ -39,6 +38,15 @@
     edges {
       node {
         id
+        name
+        location
+        type
+        description
+        resistantTo
+        standardDamage
+        bonusDamage
+        immuneTo
+        tailSeverable
       }
     }
   }
@@ -47,12 +55,12 @@
 
 <script>
 import Author from '~/components/Author.vue'
-import PostCard from '~/components/PostCard.vue'
+import MonsterCard from '~/components/MonsterCard.vue'
 
 export default {
   components: {
     Author,
-    PostCard
+    MonsterCard
   },
   metaInfo: {
     title: 'Home'

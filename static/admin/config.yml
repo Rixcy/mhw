@@ -58,7 +58,8 @@ collections:
         widget: "select"
         options: *types
       - label: "Resistant to (when covered in mud or hardened)"
-        name: "resistant_to"
+        name: "resistantTo"
+        default: false
         widget: "relation"
         collection: "elements"
         searchFields: ["name"]
@@ -67,7 +68,8 @@ collections:
         multiple: true
         required: false
       - label: "Standard damage"
-        name: "standard_damage"
+        name: "standardDamage"
+        default: false
         widget: "relation"
         collection: "elements"
         searchFields: ["name"]
@@ -76,7 +78,8 @@ collections:
         multiple: true
         required: false
       - label: "Bonus damage"
-        name: "bonus_damage"
+        default: false
+        name: "bonusDamage"
         widget: "relation"
         collection: "elements"
         searchFields: ["name"]
@@ -85,7 +88,8 @@ collections:
         multiple: true
         required: false
       - label: "Immune to"
-        name: "immune_to"
+        default: false
+        name: "immuneTo"
         widget: "relation"
         collection: "elements"
         searchFields: ["name"]
@@ -93,6 +97,6 @@ collections:
         displayFields: ["name"]
         multiple: true
         required: false
-      - {label: "Tail severable?", name: "tail_severable", widget: "boolean", required: false}
+      - {label: "Tail severable?", name: "tailSeverable", widget: "boolean", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}

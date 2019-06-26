@@ -2,7 +2,8 @@
 name: Kulu-Ya-Ku
 location: ''
 type: Bird
-standard_damage:
+resistantTo: false
+standardDamage:
   - Fire
   - Blast
   - Dragon
@@ -12,9 +13,10 @@ standard_damage:
   - Sleep
   - Stun
   - Thunder
-bonus_damage:
+bonusDamage:
   - Water
-tail_severable: false
+immuneTo: false
+tailSeverable: false
 description: Bird
 ---
 Bird
