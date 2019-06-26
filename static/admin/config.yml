@@ -1,16 +1,4 @@
 parameters:
-  elements: &elements [
-    "Fire",
-    "Water",
-    "Thunder",
-    "Ice",
-    "Dragon",
-    "Poison",
-    "Sleep",
-    "Paralyze",
-    "Blast",
-    "Stun"
-  ]
   types: &types [
     "Bird",
     "Brute",
@@ -71,26 +59,38 @@ collections:
         options: *types
       - label: "Resistant to (when covered in mud or hardened)"
         name: "resistant_to"
-        widget: "select"
-        options: *elements
+        widget: "relation"
+        collection: "elements"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
         multiple: true
         required: false
       - label: "Standard damage"
         name: "standard_damage"
-        widget: "select"
-        options: *elements
+        widget: "relation"
+        collection: "elements"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
         multiple: true
         required: false
       - label: "Bonus damage"
         name: "bonus_damage"
-        widget: "select"
-        options: *elements
+        widget: "relation"
+        collection: "elements"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
         multiple: true
         required: false
       - label: "Immune to"
         name: "immune_to"
-        widget: "select"
-        options: *elements
+        widget: "relation"
+        collection: "elements"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
         multiple: true
         required: false
       - {label: "Tail severable?", name: "tail_severable", widget: "boolean"}
