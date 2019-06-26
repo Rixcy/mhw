@@ -11,6 +11,14 @@ parameters:
     "Blast",
     "Stun"
   ]
+  types: &types [
+    "Bird",
+    "Brute",
+    "Fanged",
+    "Flying",
+    "Piscine",
+    "Elder"
+  ]
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
@@ -25,12 +33,31 @@ collections:
     extension: 'md'
     fields: # The fields for each document, usually in front matter
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Cover Image", name: "coverImage", widget: "image", required: false}
       - {label: "Location", name: "location", widget: "string"}
-      - label: "Weak Against"
-        name: "weak_against"
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: *types
+      - label: "Resistant to (when covered in mud or hardened)"
+        name: "resistant_to"
         widget: "select"
         options: *elements
         multiple: true
-      - {label: "Cover Image", name: "coverImage", widget: "image", required: false}
+      - label: "Standard damage"
+        name: "standard_damage"
+        widget: "select"
+        options: *elements
+        multiple: true
+      - label: "Bonus damage"
+        name: "bonus_damage"
+        widget: "select"
+        options: *elements
+        multiple: true
+      - label: "Immune to"
+        name: "immune_to"
+        widget: "select"
+        options: *elements
+        multiple: true
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
