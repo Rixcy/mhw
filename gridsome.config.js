@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'MHW',
-  siteDescription: "A simple site to learn more about Monster Hunter World's monsters.",
+  siteDescription: "A simple site to learn more about Monster Hunter World's monsters and their weaknesses.",
 
   plugins: [
     {

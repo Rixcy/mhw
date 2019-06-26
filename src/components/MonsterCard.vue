@@ -1,11 +1,18 @@
 <template>
   <div class="post-card content-box">
     <div class="post-card__content">
-      <!-- <h2 class="post-card__title" v-html="post.title" />
-      <p class="post-card__description" v-html="post.description" />
-
-      <g-link class="post-card__link" :to="post.path">Link</g-link> -->
-      {{ monster }}
+      <h2 class="post-card__title align-middle flex items-center">
+        {{ monster.title }} <small class="text-sm ml-auto">{{ monster.type }}</small>
+      </h2>
+      <div class="block" v-if="monster.resistantTo.length > 0">
+        <h3 class="text-sm">Resistant to:</h3>
+        <span
+          v-for="(resistance, key) in monster.resistantTo"
+          :key="key"
+          class="border-solid border border-white py-1 px-2 rounded-lg text-xs font-bold mr-1"
+          v-html="resistance" />
+      </div>
+      <!-- {{ monster }} -->
     </div>
   </div>
 </template>
