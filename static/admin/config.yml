@@ -26,6 +26,7 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "monsters" # Used in routes, e.g., /admin/collections/blog
+    identifier_field: "name"
     label: "Monsters" # Used in the UI
     label_singular: "Monster" # Used in the UI for a singular version of label
     folder: "content/monsters" # The path to the folder where the documents are stored
