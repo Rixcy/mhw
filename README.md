@@ -2,6 +2,8 @@
 
 > A simple, hackable & minimalistic starter for Gridsome that uses Netlify CMS for content.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2ea6e2f-757b-48f3-abc1-4c2957188426/deploy-status)](https://app.netlify.com/sites/loving-kalam-f52e41/deploys)
+
 ## Features
 - Beautiful and simple design.
 - Markdown for content.
@@ -21,7 +23,7 @@ https://netlifycms-gridsome.suits.at/
 
 ### Enable Identity
 
-Enable the netlify identity service at https://app.netlify.com/sites/YOUR-SITE/settings/identity. For exact instructions see https://www.netlify.com/docs/identity/. You might want to enable Git Gateway as well https://www.netlify.com/docs/git-gateway/. 
+Enable the netlify identity service at https://app.netlify.com/sites/YOUR-SITE/settings/identity. For exact instructions see https://www.netlify.com/docs/identity/. You might want to enable Git Gateway as well https://www.netlify.com/docs/git-gateway/.
 
 ### Edit content
 
