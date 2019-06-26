@@ -9,26 +9,10 @@ parameters:
   ]
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "content/posts"
-    create: true
-    slug: "{{slug}}"
-    extension: 'md'
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        field: {label: Name, name: name, widget: string, default: "tag"}
-      - {label: "Cover Image", name: "coverImage", widget: "image", required: false}
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "elements"
     identifier_field: "name"
     label: "Elements"
@@ -41,15 +25,15 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Icon", name: "icon", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: false}
-  - name: "monsters" # Used in routes, e.g., /admin/collections/blog
+  - name: "monsters"
     identifier_field: "name"
-    label: "Monsters" # Used in the UI
-    label_singular: "Monster" # Used in the UI for a singular version of label
-    folder: "content/monsters" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    label: "Monsters"
+    label_singular: "Monster"
+    folder: "content/monsters"
+    create: true
+    slug: "{{slug}}"
     extension: 'md'
-    fields: # The fields for each document, usually in front matter
+    fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Cover Image", name: "coverImage", widget: "image", required: false}
       - {label: "Location", name: "location", widget: "string", required: false}
@@ -97,6 +81,10 @@ collections:
         displayFields: ["name"]
         multiple: true
         required: false
-      - {label: "Tail severable?", name: "tailSeverable", widget: "boolean", required: false}
+      - label: "Tail severable?"
+        name: "tailSeverable"
+        widget: "boolean"
+        default: false
+        required: false
       - {label: "Description", name: "description", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
