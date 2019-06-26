@@ -19,7 +19,7 @@ collections:
     label_singular: "Element"
     folder: "content/elements"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.name}}"
     extension: 'md'
     fields:
       - {label: "Name", name: "name", widget: "string"}
@@ -31,7 +31,7 @@ collections:
     label_singular: "Monster"
     folder: "content/monsters"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.name}}"
     extension: 'md'
     fields:
       - {label: "Name", name: "name", widget: "string"}
