@@ -16,6 +16,12 @@ module.exports = {
         path: 'content/monsters/*.md',
         route: '/monsters/:slug',
       }
+    },
+    {
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        tailwindConfig: './tailwind.config.js',
+      }
     }
   ],
 

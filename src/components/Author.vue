@@ -1,14 +1,12 @@
 <template>
-	<div class="author">
-
-		<h1 v-if="showTitle" class="author__site-title">
+	<div class="author mx-auto text-center mb-8 sm:mb-16">
+		<h1 v-if="showTitle" class="author__site-title mx-auto text-2xl">
 			{{ $static.metaData.siteName }}
 		</h1>
 
-		<p class="author__intro">
+		<p class="author__intro opacity-75">
 			{{ $static.metaData.siteDescription }}
 		</p>
-
 	</div>
 </template>
 
@@ -29,33 +27,10 @@ export default {
 
 <style lang="scss">
 .author {
-	margin: 0 auto;
 	max-width: 500px;
-	text-align: center;
-	padding-bottom: calc(var(--space) / 2);
-
-	&__image {
-		border-radius: 100%;
-		width: 90px;
-		height: 90px;
-		margin-bottom: 1em;
-	}
-
-	&__intro {
-		opacity: .8;
-	}
 
 	&__site-title {
-		margin: 0 auto;
-		font-size: 1.5em;
 		max-width: 400px;
-	}
-
-	&__links {
-		margin-top: -.5em;
-		a {
-			margin: 0 .5em;
-		}
 	}
 }
 </style>
