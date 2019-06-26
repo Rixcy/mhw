@@ -4,16 +4,17 @@ location: ''
 type: Bird
 standard_damage:
   - Fire
-  - Thunder
-  - Ice
+  - Blast
   - Dragon
+  - Ice
+  - Paralyze
   - Poison
   - Sleep
-  - Paralyze
-  - Blast
   - Stun
+  - Thunder
 bonus_damage:
   - Water
+tail_severable: true
 description: Bird
 ---
 Bird
