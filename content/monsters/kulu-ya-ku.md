@@ -14,7 +14,7 @@ standard_damage:
   - Thunder
 bonus_damage:
   - Water
-tail_severable: true
+tail_severable: false
 description: Bird
 ---
 Bird
