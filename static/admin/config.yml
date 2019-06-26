@@ -81,5 +81,6 @@ collections:
         options: *elements
         multiple: true
         required: false
-      - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tail severable?", name: "tail_severable", widget: "boolean"}
+      - {label: "Description", name: "description", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
