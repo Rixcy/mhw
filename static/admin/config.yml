@@ -18,6 +18,8 @@ collections:
     label_singular: "Element"
     folder: "content/elements"
     create: true
+    editor:
+      preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     extension: 'md'
     fields:
@@ -30,6 +32,8 @@ collections:
     label_singular: "Monster"
     folder: "content/monsters"
     create: true
+    editor:
+      preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     extension: 'md'
     fields:
@@ -45,9 +49,9 @@ collections:
         default: false
         widget: "relation"
         collection: "elements"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
         multiple: true
         required: false
       - label: "Standard damage"
@@ -55,9 +59,9 @@ collections:
         default: false
         widget: "relation"
         collection: "elements"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
         multiple: true
         required: false
       - label: "Bonus damage"
@@ -65,9 +69,9 @@ collections:
         name: "bonusDamage"
         widget: "relation"
         collection: "elements"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
         multiple: true
         required: false
       - label: "Immune to"
@@ -75,9 +79,9 @@ collections:
         name: "immuneTo"
         widget: "relation"
         collection: "elements"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
+        searchFields: ["title"]
+        valueField: "title"
+        displayFields: ["title"]
         multiple: true
         required: false
       - label: "Tail severable?"
