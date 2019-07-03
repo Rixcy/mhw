@@ -1,7 +1,7 @@
 ---
 title: Kulu-Ya-Ku
 location: ''
-type: Bird
+type: Fanged
 resistantTo: false
 standardDamage:
   - Fire
